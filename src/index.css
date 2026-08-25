@@ -1,0 +1,124 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Playfair Display', Georgia, serif;
+    --font-cinzel: 'Cinzel', serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+    --font-cormorant: 'Cormorant Garamond', serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #043C2A;
+    color: #F6F0DD;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-serif);
+  }
+
+  .font-brand {
+    font-family: var(--font-cinzel);
+  }
+
+  .font-editorial {
+    font-family: var(--font-cormorant);
+  }
+}
+
+/* Custom Kosmo Gold & Emerald Utilities */
+.bg-emerald-deep {
+  background-color: #075C3B;
+}
+
+.bg-emerald-forest {
+  background-color: #043C2A;
+}
+
+.bg-emerald-rich {
+  background-color: #087044;
+}
+
+.bg-charcoal-dark {
+  background-color: #151815;
+}
+
+.text-gold-accent {
+  color: #D6B34A;
+}
+
+.text-gold-warm {
+  color: #E5C65A;
+}
+
+.text-cream-light {
+  color: #F6F0DD;
+}
+
+.border-gold-subtle {
+  border-color: rgba(214, 179, 74, 0.35);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #FFF0BE 0%, #D6B34A 50%, #B8922C 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-gradient-btn {
+  background: linear-gradient(135deg, #E5C65A 0%, #D6B34A 50%, #C99E2A 100%);
+  color: #043C2A;
+  box-shadow: 0 4px 20px rgba(214, 179, 74, 0.25);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.gold-gradient-btn:hover {
+  background: linear-gradient(135deg, #FFF0BE 0%, #E5C65A 50%, #D6B34A 100%);
+  box-shadow: 0 6px 28px rgba(214, 179, 74, 0.4);
+  transform: translateY(-2px);
+}
+
+.gold-border-glow {
+  border: 1px solid rgba(214, 179, 74, 0.4);
+  box-shadow: 0 0 25px rgba(214, 179, 74, 0.12);
+}
+
+.emerald-glass {
+  background: rgba(7, 92, 59, 0.82);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(214, 179, 74, 0.2);
+}
+
+.card-dark-texture {
+  background: linear-gradient(145deg, #075C3B 0%, #043C2A 100%);
+  border: 1px solid rgba(214, 179, 74, 0.22);
+}
+
+/* Subtle gold line ornament */
+.ornament-line {
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, rgba(214, 179, 74, 0.8) 50%, transparent 100%);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #043C2A;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #075C3B;
+  border-radius: 4px;
+  border: 1px solid rgba(214, 179, 74, 0.3);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #D6B34A;
+}

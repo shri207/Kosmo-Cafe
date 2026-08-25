@@ -1,0 +1,6 @@
+{
+  "name": "Kosmo Cafe",
+  "description": "Multi-page website for Kosmo Cafe (Alwarpet, Chennai) featuring artisanal menu exploration, signature Cold Milo showcase, cafe heritage story, ambient gallery, 1,923+ verified Google reviews, table inquiry, and late-night directions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
